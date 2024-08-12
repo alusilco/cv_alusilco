@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid-container {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header" 
+        "main main aside" 
+        "main main aside" 
+        "small small small" 
+        "gallery gallery gallery"
+        "footer footer footer";
+    column-gap: .5rem;
+    row-gap: .4rem;
+}
+
+.header {
+    position: static;
+    top: 2rem;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: white;
+    background-image: url(../assets/lucia.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 10% center;
+
+}
+
+.header h1 {
+    font-family: "Poppins";
+    font-size: 4rem;
+    margin-right: 2rem;
+    background: radial-gradient(circle, #002fff 0%, #5de0e6 50%, #004aad 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.header p {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    max-width: 66ch;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom right, rgba(255,255, 255));
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    width: 6ch;
+    
+    
+}
+
+nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    font-family:  "Poppins", sans-serif;
+    background: radial-gradient(circle, #002fff 50%, #5679a7 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+} 
+
+nav li:hover a {
+    color: white;
+    background-color: lightblue;
+}
+
+main {
+    grid-area: main;
+}
+
+main article header {
+    font-size: 80%;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(5, 48, 238);
+    margin-bottom: 2rem;
+    text-align: end;
+    background: radial-gradient(circle, #002fff 20%, #5de0e6 50%, #004aad 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 6%;
+    border: 50%;
+}
+
+.author div p {
+    font-size: 1rem;
+    line-height: .5rem;
+    width: auto;
+}
+
+
+main article>p {
+    margin: 1rem 2rem 3rem 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    width: 95%;
+    text-align: justify;
+}
+
+aside section {
+    padding: 0 1rem 0 0;
+    font-size: 50%;
+
+}
+
+main article figcaption {
+    width: 90%;
+    font-size: 1rem;
+    color: rgb(63, 63,63)
+}
+
+figcaption {
+    font-size: small;
+}
+
+
+/* --------------------------------------------------------- */
+
+/* SECCIÓN LATERAL (aside) */
+
+aside {
+    grid-area: aside;
+    
+}
+
+aside section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 65%;
+    margin-bottom: 0 0 3rem 1rem;
+    margin: 1rem 0 2rem 0;
+}
+
+aside h3 {
+    background: linear-gradient(to right, #00f, #004aad);
+    color: white;
+    padding: .5rem;
+    text-align: center;
+}
+
+aside ol{
+    border-bottom:  rgb(6, 43, 248)
+}
+
+aside li {
+    margin-bottom: 2rem;
+}
+
+aside a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5rem;
+}
+
+/* BANNERS */
+
+.ad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside .ad div {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    background-color: rgb(183, 208, 247);
+    margin-bottom: 2rem;
+}
+
+
+/* Articulos de abajo */
+
+.small {
+    grid-area: small;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 50%;
+
+}
+
+.small article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 3rem;
+}
+
+.small article h2,
+img,
+p {
+    margin: .5rem 0;
+    width: 70%;
+    height: 50%;
+    text-align: justify;
+
+}
+
+.small article h2{
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: footer;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black; 
+}
+
+.footer-left {
+    font-size: 0.9rem;
+}
+
+.footer-right a {
+    margin-left: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer-right img {
+    width: 24px;
+    height: 24px;
+   
+}
+
+.foto {
+    height: 300px;
+}
+
+
+.item7 {
+    grid-area: gallery;
+    background-color: white;
+}
+
+
+/* MEDIAS QUERIES */
+
+@media screen and (max-width: 1200px) {
+    
+    .grid-container {    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header header" "main aside" "main aside" 
+        "article1 article1" "article2 article2" 
+        "article3 article3"  "gallery gallery" "footer footer";   
+            
+    }
+
+    .header {
+        align-items: center;
+        justify-content: space-between;
+        background-position: bottom;
+        height: 200px; 
+    } 
+
+    .header h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .header p {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+    }
+
+    /* ARTICULO PRINCIPAL */
+
+    main article header {
+        font-size: 60%;
+    }
+
+    .author img {
+        width: 8%;
+    }
+
+    main article {
+        padding: .5rem;
+    }
+
+    main article img {
+        width: 100%;
+    }
+
+    main article figcation {
+        width: 100%;
+        font-size: .9rem;
+    }
+
+
+    .author div p {
+        font-size: .9rem;
+    }
+
+    main article>p {
+        font-size: 1rem;
+
+    }
+
+    aside section {
+        padding: 0 1rem 0 0;
+        font-size: 50%;
+    }
+
+    .small {
+        font-size: 50%;
+    }
+
+    .small article {
+        width: 35%;
+    }
+
+    .small article h2,
+    img,
+    p {
+        width: 90%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 720px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "main" "main" "small" "aside" "gallery" "footer";
+    }    
+
+    .header {
+        height: 250px;
+        position: static;
+    }
+
+    .small {
+        font-size: 55%;
+    }
+
+    .small article {
+        width: 80%;
+        border-bottom: 1px solid rgb(93,93, 93);
+    }
+
+    .small article img {
+        width: 50%;
+        height: 50%;
+    }
+    
+}
+
