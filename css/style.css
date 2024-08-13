@@ -1,14 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('./background.css');
-@import url('./gallery.css');
-@import url('./gallery.css');
-@import url('./medias_queries.css');
-
 body {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    
 }
 
 * {
@@ -32,38 +25,39 @@ body {
 }
 
 .header {
-    position: static;
+    position: staticº;
+    top: 0;
     grid-area: header;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    background-color: #E1C888;
+    background-color: white;
     background-image: url(../assets/lucia.png);
-    background-size: contain;
+    background-size: 14%;
     background-repeat: no-repeat;
-    background-size: 15%;
-    background-position: 10% center;
-
+    background-position: 15%;
+    background-color: #E1C888;
+    
+   
 }
 
 .header h1 {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-size: 4rem;
-    padding: 5% 0 0 0;
     margin-right: 2rem;
+    text-align: center;
     background: radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-
 }
 
 .header p {
     margin-right: 2rem;
-    font-size: 1.5rem;
-    max-width: 66ch;
+    font-size: 1.2rem;
+    max-width: 40ch;
 }
 
 /* Navbar */
@@ -86,21 +80,17 @@ nav ul {
 
 nav li {
     display: inline-block;
-    width: 6ch;
-    
+    width: 10ch;
     
 }
 
 nav a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-family:  "Poppins", sans-serif;
-    background:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    font-weight: 600;
+    color: #213242;
+    font-weight: bold;
+    font-size: 2rem;
 } 
 
 nav li:hover a {
@@ -115,15 +105,8 @@ main {
 main article header {
     font-size: 80%;
     padding: 1rem;
-    border-bottom: 1px solid #213242;
+    border-bottom: 1px solid rgb(93, 93,93);
     margin-bottom: 2rem;
-    text-align: start;
-    background:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    
 }
 
 .author {
@@ -131,25 +114,25 @@ main article header {
     align-items: center;
 }
 
-.author img {
-    width: 6%;
-    border: 50%;
-}
+
 
 .author div p {
     font-size: 1rem;
     line-height: .5rem;
     width: auto;
-    color:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
+    padding: 2rem;
 }
 
+.flor7 {
+    width: 100%;
+}
 
 main article>p {
-    margin: 1rem 2rem 3rem 2rem;
+    margin: 1rem 2rem;
     font-size: 1.2rem;
     line-height: 1.8rem;
-    width: 95%;
     text-align: justify;
+    padding-right: 12px;
 }
 
 aside section {
@@ -169,6 +152,290 @@ figcaption {
 }
 
 
+/* --------------------------------------------------------- */
+
+/* SECCIÓN LATERAL (aside) */
+
+aside {
+    grid-area: aside;
+    
+}
+
+aside section {
+    display: flex;
+    flex-direction: column;
+    font-size: 65%;
+    margin-bottom: 0 0 1rem 1rem;
+    margin: 1rem 0 1rem 0;
+}
+aside h3 {
+    background:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
+    color: white;
+    padding: .5rem;
+    text-align: center;
+}
+
+aside h4 {
+    background:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
+    color: white;
+    padding: .5rem;
+    text-align: center;
+}
+
+aside ol{
+    border-bottom: #213242;
+    
+}
+
+aside li {
+    margin-bottom: 2rem;
+   
+}
+
+aside a{
+    color: #3C5A71;
+    line-height: 1.5rem;
+}
+
+/* BANNERS */
+
+.ad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside .ad div {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 170px;
+    width: 80%;
+    background-color:  #fdf1d1;;
+    margin-bottom: 2rem;
+}
 
 
+/* Articulos de abajo */
+
+.small {
+    grid-area: small;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 50%;
+
+}
+
+.small article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    text-align: justify;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.small article h2,
+img,
+p {
+    margin: .5rem 0;
+    width: 95%;
+
+}
+
+.small article h2 {
+    text-align: center;
+    color: #213242;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: footer;
+    padding: 1rem 2rem;
+    background-color: #E1C888;
+   
+}
+
+.footer-left p {
+    font-size: 18px;
+    white-space: nowrap;
+
+}
+
+.footer-right a {
+    margin-left: 1rem;
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    background: radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 600;
+    flex-wrap: wrap; 
+
+} 
+
+
+.foto {
+    width: 200px;
+    height: 200px;
+}
+
+
+.item7 {
+    grid-area: gallery;
+    background-color: white;
+}
+
+
+/* MEDIAS QUERIES */
+
+@media screen and (max-width: 1200px) {
+    
+    .grid-container {    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header header" "main aside" "main aside" 
+        "article1 article1" "article2 article2" 
+        "article3 article3"  "gallery gallery" "footer footer";   
+            
+    }
+
+    .header {
+        align-items: center;
+        justify-content: space-between;
+        background-position: bottom;
+        height: 200px; 
+    } 
+
+    .header h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .header p {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+    }
+
+    /* ARTICULO PRINCIPAL */
+
+    main article header {
+        font-size: 60%;
+    }
+
+    .author img {
+        width: 8%;
+    }
+
+    main article {
+        padding: .5rem;
+    }
+
+    main article img {
+        width: 100%;
+    }
+
+    main article figcation {
+        width: 100%;
+        font-size: .9rem;
+    }
+
+
+    .author div p {
+        font-size: .9rem;
+    }
+
+    main article>p {
+        font-size: 1rem;
+
+    }
+
+    aside section {
+        padding: 0 1rem 0 0;
+        font-size: 50%;
+    }
+
+    .small {
+        font-size: 50%;
+    }
+
+    .small article {
+        width: 35%;
+    }
+
+    .small article h2,
+    img,
+    p {
+        width: 90%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 720px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "main" "main" "small" "aside" "gallery" "footer";
+    }    
+
+    .header {
+        height: 250px;
+        position: static;
+        background-size: 35%;
+    }
+
+    h1 {
+        padding: 15px;
+    }
+
+    .small {
+        font-size: 55%;
+    }
+
+    .small article {
+        width: 80%;
+        border-bottom: 1px solid rgb(93,93, 93);
+    }
+    .title  {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .footer-left, 
+    .footer-right {
+        margin-bottom: 10px; 
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: center; 
+        gap: 10px; 
+    }
+}
 
