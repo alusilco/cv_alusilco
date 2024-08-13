@@ -1,0 +1,48 @@
+.item7 {
+    grid-area: gallery;
+    background-color: white;
+    overflow: hidden;
+    padding: .5rem;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+}
+
+.slides {
+    display: flex;
+    flex-wrap: nowrap; 
+}
+
+.slide {
+    flex: 0 0 auto; 
+    width: 200px; 
+    scroll-snap-align: center;
+}
+
+.slides img {
+    width: 97%; 
+    height: 135px;
+    display: block;
+    gap: 10px;
+    margin: .5rem;
+}
+
+.title {
+    text-align: center;
+    color:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
+}
+
+
+

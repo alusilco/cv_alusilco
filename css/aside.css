@@ -1,0 +1,62 @@
+/* --------------------------------------------------------- */
+
+/* SECCIÓN LATERAL (aside) */
+
+aside {
+    grid-area: aside;
+    
+}
+
+aside section {
+    display: flex;
+    flex-direction: column;
+    font-size: 65%;
+    margin-bottom: 0 0 1rem 1rem;
+    margin: 1rem 0 1rem 0;
+}
+aside h3 {
+    background:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
+    color: white;
+    padding: .5rem;
+    text-align: center;
+}
+
+aside h4 {
+    background:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
+    color: white;
+    padding: .5rem;
+    text-align: center;
+}
+
+aside ol{
+    border-bottom: #213242;
+    
+}
+
+aside li {
+    margin-bottom: 2rem;
+   
+}
+
+aside a{
+    color: #3C5A71;
+    line-height: 1.5rem;
+}
+
+/* BANNERS */
+
+.ad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside .ad div {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    background-color:  #fdf1d1;;
+    margin-bottom: 2rem;
+}
