@@ -35,7 +35,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    background-color: white;
+    background-color: #E1C888;
     background-image: url(../assets/lucia.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@ body {
     font-size: 4rem;
     padding: 5% 0 0 0;
     margin-right: 2rem;
-    background: radial-gradient(circle, #002fff 0%, #5de0e6 50%, #004aad 100%);
+    background: radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -92,7 +92,7 @@ nav a {
     font-size: 2rem;
     text-decoration: none;
     font-family:  "Poppins", sans-serif;
-    background: radial-gradient(circle, #002fff 50%, #5679a7 50%);
+    background:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -112,10 +112,10 @@ main {
 main article header {
     font-size: 80%;
     padding: 1rem;
-    border-bottom: 1px solid rgb(5, 48, 238);
+    border-bottom: 1px solid #213242;
     margin-bottom: 2rem;
-    text-align: end;
-    background: radial-gradient(circle, #002fff 20%, #5de0e6 50%, #004aad 100%);
+    text-align: start;
+    background:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -137,6 +137,7 @@ main article header {
     font-size: 1rem;
     line-height: .5rem;
     width: auto;
+    color:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
 }
 
 
@@ -177,29 +178,30 @@ aside {
 aside section {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     font-size: 65%;
-    margin-bottom: 0 0 3rem 1rem;
-    margin: 1rem 0 2rem 0;
+    margin-bottom: 0 0 1rem 1rem;
+    margin: 1rem 0 1rem 0;
 }
 
 aside h3 {
-    background: linear-gradient(to right, #00f, #004aad);
+    background:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
     color: white;
     padding: .5rem;
     text-align: center;
 }
 
 aside ol{
-    border-bottom:  rgb(6, 43, 248)
+    border-bottom: #213242;
+    
 }
 
 aside li {
     margin-bottom: 2rem;
+   
 }
 
 aside a{
-    color: blue;
+    color: #3C5A71;
     line-height: 1.5rem;
 }
 
@@ -217,7 +219,7 @@ aside .ad div {
     align-items: center;
     height: 200px;
     width: 80%;
-    background-color: rgb(183, 208, 247);
+    background-color:  #fdf1d1;;
     margin-bottom: 2rem;
 }
 
@@ -249,6 +251,7 @@ p {
     width: 70%;
     height: 50%;
     text-align: justify;
+    color: radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
 
 }
 
@@ -262,7 +265,7 @@ p {
     align-items: center;
     grid-area: footer;
     padding: 1rem 2rem;
-    background-color: white;
+    background-color: #E1C888;
    
 }
 
@@ -276,7 +279,7 @@ p {
     display: inline-block;
     font-size: 2rem;
     text-decoration: none;
-    background: radial-gradient(circle, #002fff 50%, #2b64af 50%);
+    background: radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -284,8 +287,6 @@ p {
     flex-wrap: nowrap; 
 
 } 
-
-
 
 
 .foto {
@@ -411,7 +412,7 @@ p {
 
     .small article {
         width: 80%;
-        border-bottom: 1px solid rgb(93,93, 93);
+        border-bottom: 1px solid #E3A92B
     }
 
     .small article img {
@@ -475,14 +476,13 @@ p {
         grid-area: gallery;
         background-color: white;
         overflow: hidden;
-        padding: 2rem;
+        padding: .5rem;
     }
     
     .slider-container {
         display: flex;
         align-items: center;
         position: relative;
-        width: 100%;
         overflow: hidden;
     }
     
@@ -506,12 +506,16 @@ p {
     }
     
     .slides img {
-        width: 95%; 
-        height: 200px;
+        width: 97%; 
+        height: 135px;
         display: block;
-        gap: 20px;
-        object-fit: cover;
-        margin: 1rem;
+        gap: 10px;
+        margin: .5rem;
+    }
+
+    .title {
+        text-align: center;
+        color:  radial-gradient(circle, #213242 0%, #3C5A71 50%, #517490  100%);
     }
     
      
