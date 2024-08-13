@@ -29,8 +29,7 @@ body {
 }
 
 .header {
-    position: static;
-    top: 2rem;
+    position: sticky;
     grid-area: header;
     display: flex;
     flex-direction: column;
@@ -48,6 +47,7 @@ body {
 .header h1 {
     font-family: "Poppins";
     font-size: 4rem;
+    padding: 5% 0 0 0;
     margin-right: 2rem;
     background: radial-gradient(circle, #002fff 0%, #5de0e6 50%, #004aad 100%);
     -webkit-background-clip: text;
@@ -199,8 +199,7 @@ aside li {
 }
 
 aside a{
-    text-decoration: none;
-    color: black;
+    color: blue;
     line-height: 1.5rem;
 }
 
@@ -264,35 +263,37 @@ p {
     grid-area: footer;
     padding: 1rem 2rem;
     background-color: white;
-    color: black; 
+   
 }
 
 .footer-left {
     font-size: 0.9rem;
+
 }
 
 .footer-right a {
     margin-left: 1rem;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 2rem;
     text-decoration: none;
-}
+    background: radial-gradient(circle, #002fff 50%, #2b64af 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 600;
+    flex-wrap: nowrap; 
 
-.footer-right img {
-    width: 24px;
-    height: 24px;
-   
-}
+} 
+
+
+
 
 .foto {
     height: 300px;
 }
 
 
-.item7 {
-    grid-area: gallery;
-    background-color: white;
-}
+
 
 
 /* MEDIAS QUERIES */
@@ -365,6 +366,7 @@ p {
 
     main article>p {
         font-size: 1rem;
+        width: 90%;
 
     }
 
@@ -387,7 +389,7 @@ p {
         width: 90%;
     }
 
-
+  
 
 }
 
@@ -416,6 +418,100 @@ p {
         width: 50%;
         height: 50%;
     }
-    
-}
 
+    .footer-right i {
+        font-size: 13px; 
+    }
+    
+    .footer-left  {
+        font-size: 10px; 
+    }
+    .footer-right {
+        display: flex;
+        
+           
+        }
+    }
+    
+
+    
+
+    /* Slider EXPERIMENTO */
+/* 
+    .item7 {
+        grid-area: gallery;
+        background-color: white;
+        overflow: hidden; 
+    }
+    
+    .slider {
+        display: flex;
+        justify-content: center;
+        font-size: 50%;
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory; 
+    
+    .slides {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: start;
+        width: max-content; 
+        gap: 1rem; 
+    }
+    
+    .slide {
+        scroll-snap-align: start; 
+        flex: 0 0 auto; 
+    }
+    
+    .slides img {
+        width: 100px; 
+        height: auto; 
+    }
+     */
+
+     .item7 {
+        grid-area: gallery;
+        background-color: white;
+        overflow: hidden;
+        padding: 2rem;
+    }
+    
+    .slider-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .slider {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        
+    }
+    
+    .slides {
+        display: flex;
+        flex-wrap: nowrap; 
+    }
+    
+    .slide {
+        flex: 0 0 auto; 
+        width: 200px; 
+        scroll-snap-align: center;
+    }
+    
+    .slides img {
+        width: 95%; 
+        height: 200px;
+        display: block;
+        gap: 20px;
+        object-fit: cover;
+        margin: 1rem;
+    }
+    
+     
