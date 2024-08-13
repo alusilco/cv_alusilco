@@ -16,11 +16,11 @@
         align-items: center;
         justify-content: space-between;
         background-position: bottom;
-        height: 200px; 
+        height: 150px; 
         background-image: url(../assets/lucia.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-size: 30%;
+        background-size: 20%;
         background-position: 50% center;
     } 
 
@@ -42,7 +42,10 @@
     ul {
         text-align: center;
         margin: 0;
+        margin-bottom: 50px;
+        
     }
+
 
     /* ARTICULO PRINCIPAL */
 
@@ -56,20 +59,29 @@
 
     main article {
         padding: .5rem 0 1rem 0 ;
+        padding-right: 100px;
+        text-align: center;
+
     }
 
     main article img {
         width: 100%;
     }
 
+    main article h2 {
+        text-align: center;
+    }
+
     main article figcation {
         width: 100%;
         font-size: .9rem;
+        
     }
 
 
     .author div p {
-        font-size: .9rem;
+        font-size: .2rem;
+      
     }
 
     main article>p {
